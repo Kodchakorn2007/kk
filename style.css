@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #fff8e7;
+}
+
+/* หน้า SUM */
+.sum-page {
+  background: linear-gradient(to bottom, red, orange);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sum-link {
+  font-size: 120px;
+  font-weight: bold;
+  color: gold;
+  text-decoration: none;
+}
+
+/* แถบเมนู */
+header {
+  background: #fcbfb4;
+  padding: 15px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  background: #ff9966;
+}
+
+nav ul li a.active {
+  background: #f28b50;
+}
+
+/* Main */
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+main img {
+  max-width: 500px;
+  width: 100%;
+  border: 5px solid #ddd;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+/* กรอบรูปภาพ */
+.image-frame {
+  display: inline-block;
+  padding: 8px;
+  background: #fff;
+  border: 5px solid #d2691e;   /* สีน้ำตาลส้ม */
+  border-radius: 20px;
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.2);
+}
+
+/* กรอบข้อความใหญ่ (เช่น Hello) */
+.text-frame {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  border: 3px solid #ff4500;
+  border-radius: 15px;
+  background: #ffe5d0;
+  color: #ff4500;
+  transform: rotate(-5deg);
+}
+
+/* ข้อความกระจายเล็ก ๆ (Hi, Hello) */
+.text-scatter {
+  position: absolute;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transform: rotate(-10deg);
+}
+
+.text-scatter.red { color: red; }
+.text-scatter.orange { color: orange; }
+.text-scatter.yellow { color: gold; }
+/* กรอบข้อมูลโปรไฟล์ */
+.profile-box {
+  display: inline-block;
+  padding: 25px 40px;
+  margin: 20px;
+  background: #ffe4b3;         /* ครีม */
+  border-radius: 30px 60px 40px 20px;  /* มนไม่เท่ากัน เหมือนกระดาษ */
+  box-shadow: 4px 6px 15px rgba(0,0,0,0.15);
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+/* กรอบรวมเกียรติบัตร */
+.trophy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* กรอบรูปเกียรติบัตร */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-item img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+
+.contact-item:hover {
+  transform: scale(1.1);
+  color: #ff6600;
+}
